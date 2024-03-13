@@ -38,10 +38,15 @@ encoder encodes the string length as int value before encoding any characters or
 
 2. DECODE operation
 -> read and validate file arguments
+   
 -> decode magic string
+
 -> decode size of secret file extension
+
 -> decode secret file extension
+
 -> decode size of secret file
+
 -> decode secret data
 ->copy remaining image data that was not encoded to stego img
 
