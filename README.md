@@ -15,15 +15,25 @@ encoder encodes the string length as int value before encoding any characters or
 
 1.Encode operation
 -> read and validate the arguments passed in comd line.
+
 -> open files as required.
+
 -> check image capacity : image data( pixel data or RGB bytes needs to be sufficient enough to encode magic string + size of secret file extension (".txt") + secret file extension + size of secret file data + secret data .
+
 -> copy header bytes to new stego image, since properties of image are intact.
+
 -> encoding starts from offset of file where pixel data starts(RGB bytes).
+
 -> in this project .bmp has 24bpp format i.e it has pixel represented in RGB (3 intensities).
+
 ->encode magic string.
+
 ->encode size of secret file extension.
+
 -> encode extension.
+
 -> encode size of secret file data.
+
 -> encode secret file data.
 
 2. DECODE operation
